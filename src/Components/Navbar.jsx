@@ -14,7 +14,7 @@ const Navbar = () => {
     const [open, isOpen] = useState(false);
 
     return (
-    <div className='bg-[#FFF4EA] h-[17vh] w-full flex items-center sticky top-0'>
+    <div className='bg-[#FFF4EA] h-[17vh] w-full flex items-center sticky top-0 z-10'>
         <div className="navbar h-[60%] w-full flex justify-between items-center">
             <div className="pl-2 flex justify-center items-center gap-10">
                 <h1 className='font-[500]'>Dashboard</h1>
