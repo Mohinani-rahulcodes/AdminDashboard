@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
 import { IoHomeSharp, IoFolderOpen, IoBagHandle, IoCalendarNumberOutline } from "react-icons/io5";
 import { RiAppsFill, RiSecurePaymentFill, RiMessage2Fill, RiLogoutCircleLine } from "react-icons/ri";
 import { FaBell } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className='h-screen w-[15vw] flex justify-center items-start pt-6 sticky top-0 '>
+    <div className='hidden md:h-screen w-[15vw] md:flex justify-center items-start pt-6 sticky top-0 '>
         <div className="sidebar bg-white h-[95%] w-full rounded-2xl pt-9 shadow-[0.3px_2px_6px_silver] overflow-hidden">
             <img src="/logo.webp" className='h-14 w-full mb-8' alt="CK Logo" />
             <div className="menu px-5">

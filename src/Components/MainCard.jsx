@@ -56,17 +56,17 @@ function MainCard() {
     ];
     const colors = ["#FF8E29", "#27D095", "#67CADF", "#F54F5F"];
   return (
-    <div className='h-[82vh] w-full pr-4 pl-2 pt-1'>
-        <div className="card grid grid-cols-3 gap-y-5 gap-x-6">
+    <div className='md:h-[82vh] md:w-full w-[100vw] md:pr-4 pr-9 md:pl-2 pl-1 pt-1 bg-[#FFF4EA]'>
+        <div className="card md:grid md:grid-cols-3 md:gap-y-5 md:gap-x-6 flex flex-col gap-6 ">
             <div className="bg-white rounded-lg shadow-[1px_1px_8px_silver] h-[15vh] flex justify-between items-center px-4">
                 <div className="flex gap-5">
-                    <img src="/tag.webp" alt="Tag" className='h-14 w-14'/>
-                    <div className="flex flex-col">
-                        <h1 className='text-[0.8rem] font-semibold'>Sales</h1>
+                    <img src="/tag.webp" alt="Tag" className='md:h-14 md:w-14 h-20 w-20'/>
+                    <div className="flex flex-col justify-center">
+                        <h1 className='md:text-[0.8rem] font-semibold'>Sales</h1>
                         <p className='text-[0.8rem] text-zinc-500'>₹8,02,497</p>
                         <div className="flex justify-start items-center gap-1.5">
                             <img src="risingarrow.svg" className='h-3.5 w-3.5' alt="incrementArrow" />
-                            <p className='text-[0.67rem] text-[#FF8E29]'>+55% last month</p>
+                            <p className='md:text-[0.67rem] text-[0.8rem] text-[#FF8E29]'>+55% last month</p>
                         </div>
                     </div>
                 </div>
@@ -74,13 +74,13 @@ function MainCard() {
             </div>
             <div className="bg-white rounded-lg shadow-[1px_1px_8px_silver] h-[15vh] flex justify-between items-center px-4">
                 <div className="flex gap-5">
-                    <img src="/customer.webp" alt="Tag" className='h-14 w-14'/>
-                    <div className="flex flex-col">
-                        <h1 className='text-[0.8rem] font-semibold'>Customer</h1>
+                    <img src="/customer.webp" alt="Tag" className='md:h-14 md:w-14 h-20 w-20'/>
+                    <div className="flex flex-col justify-center">
+                        <h1 className='md:text-[0.8rem] font-semibold'>Customer</h1>
                         <p className='text-[0.8rem] text-zinc-500'>₹30,103</p>
                         <div className="flex justify-start items-center gap-1.5">
                             <img src="risingarrow.svg" className='h-3.5 w-3.5' alt="incrementArrow" />
-                            <p className='text-[0.67rem] text-[#FF8E29]'>+12% last month</p>
+                            <p className='md:text-[0.67rem] text-[0.8rem] text-[#FF8E29]'>+12% last month</p>
                         </div>
                     </div>
                 </div>
@@ -88,25 +88,25 @@ function MainCard() {
             </div>
             <div className="bg-white rounded-lg shadow-[1px_1px_8px_silver] h-[15vh] flex justify-between items-center px-4">
                 <div className="flex gap-5">
-                    <img src="/revenue.webp" alt="Tag" className='h-14 w-14'/>
-                    <div className="flex flex-col">
-                        <h1 className='text-[0.8rem] font-semibold'>Avg Revenue</h1>
+                    <img src="/revenue.webp" alt="Tag" className='md:h-14 md:w-14 h-20 w-20'/>
+                    <div className="flex flex-col justify-center">
+                        <h1 className='md:text-[0.8rem] font-semibold'>Avg Revenue</h1>
                         <p className='text-[0.8rem] text-zinc-500'>₹28,000</p>
                         <div className="flex justify-start items-center gap-1.5">
                             <img src="risingarrow.svg" className='h-3.5 w-3.5' alt="incrementArrow" />
-                            <p className='text-[0.67rem] text-[#FF8E29]'>+210% last month</p>
+                            <p className='md:text-[0.67rem] text-[0.8rem] text-[#FF8E29]'>+210% last month</p>
                         </div>
                     </div>
                 </div>
                 <p className='h-12 text-zinc-500 text-[0.7rem]'>Apr 2025</p>
             </div>
-            <div className="flex flex-col justify-start items-start gap-2.5 bg-white rounded-lg shadow-[1px_1px_8px_silver] h-[63vh] col-span-2 pt-4 pr-10 ">
-                <p className='pl-7 text-[#121212d7]'>Revenue</p>   
+            <div className="md:h-[63vh] md:w-[52.7vw] h-[53vh] w-[88.8vw] flex flex-col justify-start items-start gap-2.5 bg-white rounded-lg shadow-[1px_1px_8px_silver] col-span-2 pt-4 md:pr-10 pr-5 ">
+                <p className='text-[1.3rem] md:text-[1rem] md:font-normal font-semibold pl-7 text-[#121212d7]'>Revenue</p>   
                 <ResponsiveContainer width="100%" height="90%" >
                     <LineChart width={500} height={300} data={data}>
                         <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                            <XAxis dataKey="name" tick={{ fontSize: "12px" }}/>
-                            <YAxis tick={{ fontSize: "10px" }}/>
+                            <XAxis dataKey="name" tick={{ fontSize: "12px" }} />
+                            <YAxis tick={{ fontSize: "10px" }} />
                             <Tooltip contentStyle={{ fontSize: "12px" }}/>
                             <Legend wrapperStyle={{ fontSize: "12px" }} /> 
                             <Line type="monotone" dataKey="Google Ads" stroke="#FF8E29" activeDot={{ r: 8 }} />
@@ -115,7 +115,7 @@ function MainCard() {
                 </ResponsiveContainer>
             </div>
             <div className="bg-white rounded-lg shadow-[1px_1px_8px_silver] h-[63vh] flex flex-col justify-between items-start py-3 px-4">
-                <h1 className='tracking-tight text-[0.8rem]'>Website Visitors</h1>
+                <h1 className='tracking-tight text-[1.3rem] md:font-normal md:pl-0 pl-2 font-bold md:text-[1rem] text-zinc-600'>Website Visitors</h1>
                 <ResponsiveContainer width="100%" height="90%">
                     <PieChart width={400} height={400}>
                         <Pie
@@ -135,14 +135,14 @@ function MainCard() {
                     <Tooltip formatter={(value) => `${value}%`} contentStyle={{ fontSize: "12px" }}/>
                     </PieChart>
                 </ResponsiveContainer>
-                <div className="pieDetail h-[25vh] w-full mt-2">
+                <div className="pieDetail md:h-[25vh] w-full mt-2">
                   {pieChart.map(({title,color,percent},index)=>(
-                    <div key={index} className="flex justify-between items-end border-b border-zinc-300 cursor-pointer">
+                    <div key={index} className={`flex justify-between items-end ${index === 3 ? '':'border-b border-zinc-300'}  cursor-pointer`}>
                       <div className="flex justify-center items-center gap-2">
-                        <div className='h-2 w-2 rounded-full' style={{backgroundColor:color}}/>
-                        <p className='text-[0.8rem] text-zinc-500'>{title}</p>
+                        <div className='md:h-2 md:w-2 h-4 w-4 rounded-full' style={{backgroundColor:color}}/>
+                        <p className='md:text-[0.8rem] text-[1rem] text-zinc-500 '>{title}</p>
                       </div>
-                      <p className='text-[0.9rem] text-zinc-800'>{percent}%</p>
+                      <p className='md:text-[0.9rem] text-zinc-800'>{percent}%</p>
                     </div>
                   ))}
                 </div>

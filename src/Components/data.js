@@ -125,7 +125,7 @@ export const products = [
     {
         name:'Camera',
         img:'/camera.webp',
-        des:'Portable Camera',
+        des:'Camera pro',
         orders:'3000',
         price:'5650₹',
         adsSpent:'4800₹',
@@ -134,7 +134,7 @@ export const products = [
     {
         name:'Nike',
         img:'/nike.webp',
-        des:'Relaxing Shoes',
+        des:'Relax Shoes',
         orders:'8000',
         price:'2050₹',
         adsSpent:'3000₹',
@@ -170,7 +170,7 @@ export const products = [
     {
         name:'Iron',
         img:'/iron.webp',
-        des:'Ironing Clothes',
+        des:'Cloth Iron ',
         orders:'500',
         price:'350₹',
         adsSpent:'3070₹',
@@ -179,7 +179,7 @@ export const products = [
     {
         name:'Electronic',
         img:'/ac.webp',
-        des:'Air Conditioners',
+        des:'Air Conditioner',
         orders:'200',
         price:'8000₹',
         adsSpent:'5050₹',
@@ -197,7 +197,7 @@ export const products = [
     {
         name:'Television',
         img:'/tv.webp',
-        des:'Entertainment TV',
+        des:'Entertain TV',
         orders:'6300',
         price:'12000₹',
         adsSpent:'9800₹',
