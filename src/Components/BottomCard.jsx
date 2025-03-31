@@ -33,10 +33,10 @@ function BottomCard() {
                     {currentItems.map(({name,des,img,orders,price,adsSpent,refund},index)=>(
                         <div key={index} className="parent md:h-17 md:w-full h-20 flex justify-between items-center hover:bg-amber-100 duration-400">
                             <div className="h-13 w-32 flex justify-start items-center gap-1.5 cursor-pointer">
-                                <img src={img} alt="products" className='rounded-full md:h-8 md:w-8 h-12 w-12 object-cover'/>
+                                <img src={img} alt="products" className='rounded-full h-12 w-12 object-cover'/>
                                 <div className="flex flex-col justify-between items-start">
-                                    <p className='md:text-[0.8rem] text-[1rem]'>{name}</p>
-                                    <p className='md:text-[0.67rem] text-[0.8rem] whitespace-nowrap text-zinc-600'>{des}</p>
+                                    <p className='md:text-[0.8rem] text-[1.4rem]'>{name}</p>
+                                    <p className='md:text-[0.67rem] text-[1.4rem] whitespace-nowrap text-zinc-600'>{des}</p>
                                 </div>
                             </div>
                             <div className="h-13 w-20 md:-ml-8 ml-4 flex justify-start items-center text-[0.8rem] text-zinc-500">{orders}</div>
@@ -74,7 +74,7 @@ function BottomCard() {
                         {customer.map(({name,img,country,messg},index)=>(
                             <div key={index} className="flex justify-between items-center">
                                 <div className="flex justify-start items-center gap-3">
-                                    <img src={img} className='md:h-8 md:w-8 h-12 w-12 rounded-full object-cover cursor-pointer' alt="profile" />
+                                    <img src={img} className='md:h-10 md:w-10 h-12 w-12 rounded-full object-cover cursor-pointer' alt="profile" />
                                     <div className="">
                                         <p className='md:text-[0.8rem]'>{name}</p>
                                         <p className='text-[0.8rem] text-zinc-500'>{country}</p>
