@@ -35,8 +35,8 @@ function BottomCard() {
                             <div className="h-13 w-32 flex justify-start items-center gap-1.5 cursor-pointer">
                                 <img src={img} alt="products" className='rounded-full h-12 w-12 object-cover'/>
                                 <div className="flex flex-col justify-between items-start">
-                                    <p className='md:text-[0.8rem] text-[1.4rem]'>{name}</p>
-                                    <p className='md:text-[0.67rem] text-[1.4rem] whitespace-nowrap text-zinc-600'>{des}</p>
+                                    <p className='md:text-[1rem] text-[0.9rem]'>{name}</p>
+                                    <p className='md:text-[0.8rem] text-[0.8rem] whitespace-nowrap text-zinc-600'>{des}</p>
                                 </div>
                             </div>
                             <div className="h-13 w-20 md:-ml-8 ml-4 flex justify-start items-center text-[0.8rem] text-zinc-500">{orders}</div>
