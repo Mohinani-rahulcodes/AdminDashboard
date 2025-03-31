@@ -29,9 +29,9 @@ function BottomCard() {
                 <div className="heading h-12 w-full flex justify-between items-center px-7 md:text-[0.9rem]">
                     <span>Products</span><span>Orders</span><span>Price</span><span className='md:block hidden'>Ads Spent</span><span className='md:block hidden'>Refunds</span>
                 </div>
-                <div className="flex flex-col h-[80%] w-full md:px-7 pl-4">
+                <div className="flex flex-col h-[90%] w-full md:px-7 pl-4">
                     {currentItems.map(({name,des,img,orders,price,adsSpent,refund},index)=>(
-                        <div key={index} className="parent md:h-17 md:w-full h-20 flex justify-between items-center hover:bg-amber-100 duration-400">
+                        <div key={index} className="parent md:h-18 md:w-full h-20 flex justify-between items-center hover:bg-amber-100 duration-400">
                             <div className="h-13 w-32 flex justify-start items-center gap-1.5 cursor-pointer">
                                 <img src={img} alt="products" className='rounded-full h-12 w-12 object-cover'/>
                                 <div className="flex flex-col justify-between items-start">
@@ -87,7 +87,7 @@ function BottomCard() {
                 </div>
                 <div className="md:h-[46%] md:w-full w-[89.9vw] rounded-lg shadow-[1px_1px_8px_silver] bg-white flex flex-col justify-between py-3">
                     <div className="data">
-                    <h1 className='flex justify-between items-center tracking-tight md:text-sm text-[1rem] md:font-normal font-semibold px-4'>Buyers Profile
+                    <h1 className='flex justify-between items-center tracking-tight md:text-[1rem] text-[1rem] md:font-normal font-semibold px-4'>Buyers Profile
                         <p className='hover:bg-zinc-200 p-2 rounded-full text-2xl md:text-[1rem] duration-300 cursor-pointer text-zinc-500'><HiDotsHorizontal /></p>
                     </h1>
                     </div>
@@ -117,9 +117,9 @@ function BottomCard() {
                                 <div key={index} className="flex justify-between items-end cursor-pointer gap-6">
                                     <div className="flex justify-center items-center gap-2">
                                       <div className='md:h-2 md:w-2 h-3 w-3 rounded-full' style={{backgroundColor:color}}/>
-                                      <p className='md:text-[0.8rem] md:text-zinc-500 text-zinc-700'>{title}</p>
+                                      <p className='md:text-[0.9rem] md:text-zinc-500 text-zinc-700'>{title}</p>
                                     </div>
-                                    <p className='md:text-[0.7rem] te text-zinc-800'>{percent}</p>
+                                    <p className='md:text-[0.9rem] te text-zinc-800'>{percent}</p>
                                 </div>
                             ))}
                         </div>

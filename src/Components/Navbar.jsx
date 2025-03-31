@@ -40,7 +40,7 @@ const Navbar = ({openMenuFunc,showMenu}) => {
                     {/* Flag Selection Dropdown */}
                     {showOptions && (
                       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} 
-                      className="absolute md:right-57 md:top-17 top-20 right-34 md:h-[25vh] md:w-[10vw] w-28 bg-white flex flex-col gap-2 p-2 rounded-lg shadow-[1px_1px_8px_silver] ">
+                      className="absolute md:right-57 top-20 right-34 md:h-[21vh] md:w-[10vw] w-28 bg-white flex flex-col gap-2 p-2 rounded-lg shadow-[1px_1px_8px_silver] ">
                         {flags.map((flag) => (
                             <div className="flex justify-between items-center px-2 bg-white hover:bg-zinc-300 hover:rounded-2xl py-1 cursor-pointer duration-300" onClick={() => {setSelectedFlag(flag); setShowOptions(false);}}>
                                 <img
@@ -68,11 +68,11 @@ const Navbar = ({openMenuFunc,showMenu}) => {
                     </div>
                     {open && (
                         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} 
-                        className="md:h-[18vh] md:w-[10vw] h-40 w-38 shadow-[1px_1px_8px_silver] bg-white rounded-sm absolute md:top-11 md:right-0 top-14 right-0 flex flex-col justify-center items-center md:text-sm text-[#121212d7] px-2 ">
-                            <p className='flex justify-start items-center gap-7 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[0.9rem] text-[1.2rem]'><IoHomeSharp/> Home</p>
-                            <p className='flex justify-start items-center gap-7 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[0.9rem] text-[1.2rem]'><CgProfile /> Profile</p>
-                            <p className='flex justify-start items-center gap-6 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[0.9rem] text-[1.2rem]'><IoSettingsSharp />Setting</p>
-                            <p className='border-t border-zinc-300 flex justify-start items-center gap-5 mt-1 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[0.9rem] text-[1.2rem]'><RiLogoutCircleLine/> LogOut</p>
+                        className="md:h-[18vh] md:w-[9vw] h-40 w-38 shadow-[1px_1px_8px_silver] bg-white rounded-sm absolute md:top-11 md:right-0 top-14 right-0 flex flex-col justify-center items-center md:text-sm text-[#121212d7] px-2 ">
+                            <p className='flex justify-start items-center gap-7 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[1rem] text-[1.2rem]'><IoHomeSharp/> Home</p>
+                            <p className='flex justify-start items-center gap-7 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[1rem] text-[1.2rem]'><CgProfile /> Profile</p>
+                            <p className='flex justify-start items-center gap-6 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[1rem] text-[1.2rem]'><IoSettingsSharp />Setting</p>
+                            <p className='border-t border-zinc-300 flex justify-start items-center gap-5 mt-1 hover:bg-zinc-300 duration-500 rounded-xl p-0.5 md:text-[1rem] text-[1.2rem]'><RiLogoutCircleLine/> LogOut</p>
                         </motion.div>
                     )}
                 </div>
